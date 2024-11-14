@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Services</h1>
+        <div class="center">
+            <div class="service">
+                <img src="https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA" alt="Service 1">
+                <div class="title">
+                    <h3>Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation1 ullamco laboris nisi ut aliquip ex ea commodo consequat.2 </p>
+                </div>
+                <div class="footer">
+                    <a href="url"><h3>More Detail</h3></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA" alt="Service 2">
+                <div class="title">
+                    <h3>Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation1 ullamco laboris nisi ut aliquip ex ea commodo consequat.2 </p>
+                </div>
+                <div class="footer">
+                    <a href="url"><h3>More Detail</h3></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA" alt="Service 3">
+                <div class="title">
+                    <h3>Title 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation1 ullamco laboris nisi ut aliquip ex ea commodo consequat.2 </p>
+                </div>
+                <div class="footer">
+                    <a href="url"><h3>More Detail</h3></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA" alt="Service 4">
+                <div class="title">
+                    <h3>Title 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation1 ullamco laboris nisi ut aliquip ex ea commodo consequat.2 </p>
+                </div>
+                <div class="footer">
+                    <a href="url"><h3>More Detail</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .service img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .title {
+        flex-grow: 1;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .footer {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkturquoise;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* สำหรับ Desktop */
+    @media (min-width: 1024px) {
+        .service {
+            width: 300px;
+            margin: 10px;
+            float: left;
+        }
+    }
+
+    /* สำหรับ Tablet (2 Columns) */
+    @media (min-width: 480px) and (max-width: 767px) {
+        .service {
+            width: 200px;
+            margin: 10px;
+            float: left;
+        }
+    }
+
+    /* สำหรับ Mobile */
+    @media (max-width: 479px) {
+        .service {
+            width: 100%;
+            margin: 10px;
+        }
+    }
+
+</style>
+
+</html>
